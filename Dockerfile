@@ -10,4 +10,4 @@ ADD src src
 RUN composer install
 
 EXPOSE 8080
-ENTRYPOINT php -S localhost:8080 -t web web/index.php
+ENTRYPOINT php -S 0.0.0.0:8080 -t web web/index.php
